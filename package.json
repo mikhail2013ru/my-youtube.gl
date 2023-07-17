@@ -1,0 +1,26 @@
+{
+  "name": "my-youtube.gl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikhail2013ru/my-youtube.gl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikhail2013ru/my-youtube.gl/issues"
+  },
+  "homepage": "https://github.com/mikhail2013ru/my-youtube.gl#readme",
+  "devDependencies": {
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
