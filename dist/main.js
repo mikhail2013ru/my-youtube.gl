@@ -15,7 +15,7 @@
   \********************/
 /***/ (() => {
 
-
+eval("const gloAcademyList = document.querySelector('.glo-academy-list')\r\n\r\nconsole.log(gloAcademy)//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9qcy9tYWluLmpzIiwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL215LXlvdXR1YmUuZ2wvLi9qcy9tYWluLmpzP2UzYjEiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgZ2xvQWNhZGVteUxpc3QgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuZ2xvLWFjYWRlbXktbGlzdCcpXHJcblxyXG5jb25zb2xlLmxvZyhnbG9BY2FkZW15KSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./js/main.js\n");
 
 /***/ })
 
