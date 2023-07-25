@@ -1,5 +1,3 @@
-const API_KEY = 'AIzaSyD1dihYAdCCANTZZDJv1Y-9qT1axMRw4EI'
-
 const gloAcademyList = document.querySelector('.glo-academy-list')
 
 const createCard = (dataVideo) => {
