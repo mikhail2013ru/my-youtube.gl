@@ -1,7 +1,11 @@
 const gloAcademyList = document.querySelector('.glo-academy-list')
+const trendingList = document.querySelector('.trending-list')
+const musicList = document.querySelector('.music-list')
+
+console.dir(trending)
 
 const createCard = (dataVideo) => {
-    console.log(dataVideo)
+    // console.log(dataVideo)
 
     const imgUrl = dataVideo.snippet.thumbnails.high.url
     const videoId = dataVideo.id.videoId
@@ -20,7 +24,7 @@ const createCard = (dataVideo) => {
             <h3 class="video-title">${titleVideo}</h3>
             <div class="video-info">
                 <span class="video-counter">
-                    <span class="video-date">${dateVideo}</span>
+                    <span class="video-date">${(new Date(dateVideo)).toLocaleString()}</span>
                 </span>
                 <span class="video-channel">${channelTitle}</span>
             </div>`
@@ -37,3 +41,5 @@ const createList = (wrapper, listVideo) => {
 }
 
 createList(gloAcademyList, gloAcademy)
+createList(trendingList, trending)
+createList(musicList, music)
