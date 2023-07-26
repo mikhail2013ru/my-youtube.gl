@@ -5,13 +5,12 @@ const musicList = document.querySelector('.music-list')
 console.dir(trending)
 
 const createCard = (dataVideo) => {
-    // console.log(dataVideo)
-
     const imgUrl = dataVideo.snippet.thumbnails.high.url
     const videoId = dataVideo.id.videoId
     const titleVideo = dataVideo.snippet.title
     const dateVideo = dataVideo.snippet.publishedAt
     const channelTitle = dataVideo.snippet.channelTitle
+    const viewCount = dataVideo.statistics.viewCount
 
     const card = document.createElement('div')
     card.classList.add('video-card')
@@ -24,7 +23,8 @@ const createCard = (dataVideo) => {
             <h3 class="video-title">${titleVideo}</h3>
             <div class="video-info">
                 <span class="video-counter">
-                    <span class="video-date">${(new Date(dateVideo)).toLocaleString()}</span>
+                <span class="video-views"> views</span>
+                <span class="video-date">${(new Date(dateVideo)).toLocaleString()}</span>
                 </span>
                 <span class="video-channel">${channelTitle}</span>
             </div>`
