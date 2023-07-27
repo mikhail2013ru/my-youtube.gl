@@ -319,11 +319,11 @@ button {
   display: flex;
 }
 
-.video-views {
+/* .video-views {
   margin-right: 5px;
-}
+} */
 
-.video-views:after {
+/* .video-views:after {
   content: '';
   width: 2px;
   height: 2px;
@@ -331,7 +331,7 @@ button {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
-}
+} */
 
 
 .channel-button {

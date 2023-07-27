@@ -10,8 +10,25 @@ const createCard = (dataVideo) => {
     const titleVideo = dataVideo.snippet.title
     const dateVideo = dataVideo.snippet.publishedAt
     const channelTitle = dataVideo.snippet.channelTitle
-    const viewCount = dataVideo.statistics.viewCount
+    let video = document.querySelector('.video-counter')
+    let viewCount = ''
+    const videoDate = document.querySelectorAll('.video-date') 
+    
+    if (dataVideo.statistics) {
+        viewCount = `${dataVideo.statistics.viewCount} views`
 
+        videoDate.forEach((item, index, arr) => {
+            item.style.color = 'red'
+            // console.log(index)
+        })
+    } 
+    // console.log(!dataVideo.statistics && dataVideo.snippet)
+    // if (!dataVideo.statistics) {
+    //     let video = document.querySelector('.video-views')
+    //     video.style.marginRight = 0
+    // }
+
+    // console.log(viewCount)
     const card = document.createElement('div')
     card.classList.add('video-card')
     card.innerHTML = `
@@ -23,7 +40,7 @@ const createCard = (dataVideo) => {
             <h3 class="video-title">${titleVideo}</h3>
             <div class="video-info">
                 <span class="video-counter">
-                <span class="video-views"> views</span>
+                <span class="video-views">${viewCount}</span>
                 <span class="video-date">${(new Date(dateVideo)).toLocaleString()}</span>
                 </span>
                 <span class="video-channel">${channelTitle}</span>
