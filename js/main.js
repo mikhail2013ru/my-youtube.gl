@@ -10,25 +10,20 @@ const createCard = (dataVideo) => {
     const titleVideo = dataVideo.snippet.title
     const dateVideo = dataVideo.snippet.publishedAt
     const channelTitle = dataVideo.snippet.channelTitle
-    let video = document.querySelector('.video-counter')
+    let videoViews = document.querySelectorAll('.video-views')
     let viewCount = ''
-    const videoDate = document.querySelectorAll('.video-date') 
     
-    if (dataVideo.statistics) {
-        viewCount = `${dataVideo.statistics.viewCount} views`
+    videoViews.forEach(elem => {
+        console.log(dataVideo.statistics)
+        if (dataVideo.statistics) {
+            viewCount = `${dataVideo.statistics.viewCount} views`
+            if (elem.textContent.trim() !== '') {
+                elem.style.marginRight = '5px'
+                elem.style.color = 'red'
+            }
+        }
+    })
 
-        videoDate.forEach((item, index, arr) => {
-            item.style.color = 'red'
-            // console.log(index)
-        })
-    } 
-    // console.log(!dataVideo.statistics && dataVideo.snippet)
-    // if (!dataVideo.statistics) {
-    //     let video = document.querySelector('.video-views')
-    //     video.style.marginRight = 0
-    // }
-
-    // console.log(viewCount)
     const card = document.createElement('div')
     card.classList.add('video-card')
     card.innerHTML = `
