@@ -233,7 +233,7 @@ button {
   flex-wrap: wrap;
 }
 
-.video-card {
+.video-card, .video-card-trending {
   width: 30%;
   padding: 15px;
 }
@@ -317,6 +317,17 @@ button {
 
 .video-counter {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.video-counter-trending {
+  display: flex;
+  width: 100%;
+}
+
+.video-date-trending {
+  margin-left: 10px;
 }
 
 /* .video-views {
@@ -394,7 +405,7 @@ button {
 }
 
 @media (max-width: 1360px) {
-  .video-card {
+  .video-card, .video-card-trending {
     width: 50%;
     padding: 15px;
   }
@@ -408,7 +419,7 @@ button {
     width: 100%;
   }
 
-  .video-card {
+  .video-card, .video-card-trending {
     width: 100%;
     padding: 15px;
   }
