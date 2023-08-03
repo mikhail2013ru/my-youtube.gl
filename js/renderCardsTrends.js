@@ -1,4 +1,4 @@
-import { trendingList } from "./renderCards.js"
+const trendingList = document.querySelector('.trending-list')
 
 const createCardTrends = (dataVideo) => {
     const imgUrl = dataVideo.snippet.thumbnails.high.url

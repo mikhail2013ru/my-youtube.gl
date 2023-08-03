@@ -1,5 +1,4 @@
 const gloAcademyList = document.querySelector('.glo-academy-list')
-const trendingList = document.querySelector('.trending-list')
 const musicList = document.querySelector('.music-list')
 
 const createCard = (dataVideo) => {
@@ -38,4 +37,4 @@ const createList = (wrapper, listVideo) => {
 createList(gloAcademyList, gloAcademy)
 createList(musicList, music)
 
-export { createCard, createList, trendingList }
+export { createCard, createList }
